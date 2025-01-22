@@ -6,7 +6,7 @@ from openpyxl.utils import get_column_letter
 
 
 SMILES_file = r"...\SMILES_data.xlsx"  # Prepare a xlsx file with your SMILES data
-txt_file = r'...\database\file.txt'  # Prepare an empty file in txt format
+txt_file = r'...\database\File.txt'  # Prepare an empty file in txt format, as the pycbh package accepts SMILES data in text format
 
 df = pd.read_excel(SMILES_file)
 df['formula smile'] = df[df.columns[:2]].apply(lambda x: ' '.join(x.dropna().astype(str)), axis=1)
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     main()
 
 
-# Standardize input file formats
+# Standardize Ensemble learning input file formats
 def split_data_to_columns(file_path, start_column):
     with open(file_path, 'r') as file:
         data_lines = file.readlines()
