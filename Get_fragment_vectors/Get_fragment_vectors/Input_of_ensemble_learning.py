@@ -13,7 +13,7 @@ df['formula smile'] = df[df.columns[:2]].apply(lambda x: ' '.join(x.dropna().ast
 df[['formula smile']].to_csv(txt_file, index=False)
 
 # Set up the CBH rung
-rungs = [0]
+rungs = [2]
 
 
 def main():
