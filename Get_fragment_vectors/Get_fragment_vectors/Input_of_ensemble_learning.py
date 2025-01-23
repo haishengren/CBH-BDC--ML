@@ -5,7 +5,7 @@ from pycbh import smi2mh, smifromfn
 from openpyxl.utils import get_column_letter
 
 
-SMILES_file = r"...\SMILES_data.xlsx"  # Prepare a xlsx file with your SMILES data
+SMILES_file = r"...database\SMILES_data.xlsx"  # Prepare a xlsx file with your SMILES data
 txt_file = r'...\database\File.txt'  # Prepare an empty file in txt format, as the pycbh package accepts SMILES data in text format
 
 df = pd.read_excel(SMILES_file)
